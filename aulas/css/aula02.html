@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* Formato do CSS Interno
+        
+        seletor {
+            propriedade: valor;
+            
+        }
+        */
+
+        /* Tipos de propriedades de palavras
+            FONT: Family, Size, Style, Weight
+    
+            TEXT: Align, Decoration, Indent, Transform
+        */
+
+
+        .paragrafos {
+            background-color: black;
+            color: white;
+            font-size: 25pt;
+        }
+
+        #paragrafo_especial{
+            color: red;
+            font-weight: bold;
+        }
+
+        #paragrafo_teste {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 28pt;
+            font-style: italic;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: underline;
+            text-indent: 0%;
+            text-transform: uppercase;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- INLINE CSS -->
+    <!-- <p style="color: red; font-size: 35pt;">TEXTO</p>      O CSS inline tem prioriedade ao CSS interno -->
+    <!-- <p style="font-size: 35pt;">TEXTO 2</p>        O CSS interno tem prioriedade ao CSS externo -->
+
+    <p class="paragrafos">Meu primeiro parágrafo</p>
+    <p id="paragrafo_teste">Meu segundo parágrafo</p>
+    <p class="paragrafos">Meu terceiro parágrafo</p>
+    <p id="paragrafo_especial">Meu quarto parágrafo</p>
+</body>
+
+<!-- Tipos de propriedades de palavras
+    FONT: Family, Size, Style, Weight
+    
+    TEXT: Align, Decoration, Indent, Transform
+-->
+
+</html>
