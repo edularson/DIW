@@ -1,0 +1,48 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgreen;
+    height: 800px;
+    width: 80%;
+    margin: auto;
+}
+
+p {
+    background-color: lightgrey;
+}
+
+h1 {
+    background-color: coral;
+    /*padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding: 20px, 30px, 10px, 25px;*/
+    padding: 100px 200px;
+    border: 5px solid red; /* Border sempre será dentro do box do conteúdo */ 
+    outline: 5px dotted blue; /* Outline sempre será fora do box do conteúdo */ 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    background-color: aqua;
+    width: 50%; /* Widht serve para mudar a Largura da Linha */
+    height: 40%; /* Height serve para mudar a Altura da Linha */
+    padding: 50px; /* usa para afastar o conteudo da borda da sua box */
+    margin: 50px; /* usa para afastar o conteudo das margens*/
+    /*border-width: 5px;  Serve para colocar borda no conteúdo
+    border-style: dashed;
+    border-color: red; */
+    border: 5px dashed red;
+    border-top: 5px solid blue;
+}
+
+.destaque {
+    background-color: darksalmon;
+    font-size: 24px;
+}
+
+.tamanho {
+    width: 400px;
+    height: 200px;
+}
