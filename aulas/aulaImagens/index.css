@@ -1,0 +1,21 @@
+body {
+    font-size: 20px;
+    font-family: sans-serif;
+    width: 800px;
+    margin: auto;
+    background-image: url("imagens/bg.jpg");
+    background-repeat: repeat-y; /*comando para nao repetir a imagem*/
+    background-size: 100%;
+}
+p{
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+.logo1{
+    float: left;
+}
+.logo2{
+    float: right;
+}

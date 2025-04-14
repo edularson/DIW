@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+}
+
+.cabecalho {
+    background-image: url(image/banner.png);
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 1px;
+}
+
+.cabecalho-conteudo {
+    margin: 100px auto 0;
+    width: 80%;
+    text-align: center;
+    color: white;
+}
+
+.cabecalho-conteudo h1 {
+    color: black;
+    font-size: 56px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 2px white;
+}
+
+.cabecalho-conteudo p {
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 50%;
+    padding: 14px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.cabecalho nav ul {
+    text-align: right;
+    margin: 20px 80px 0 0;
+
+}
+
+.cabecalho nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 16px;
+}
+
+.cabecalho nav a {
+    background-color: rgba(0, 0, 0, .6);
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid white;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+article {
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 30px;
+    margin-top: none;
+}
+
+article h2 {
+    border-bottom: 2px solid #ccc;
+    background-color: #eee;
+    padding: 16px;
+    margin-top: o;
+}
+
+article p {
+    text-align: justify;
+}
+
+.btn {
+    background-color: #cdc7c3;
+    display: block;
+    width: fit-content;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+.rodape {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+}

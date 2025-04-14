@@ -1,0 +1,58 @@
+.container {
+    border: 2px solid black;
+    padding: 16px;
+    width: 300px;
+    margin-bottom: 16px;
+    height: 300px;
+    background-color: rgba(255, 0, 0, 6);
+}
+
+.item {
+    background-color: darkkhaki;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.fit-content .item {    /* deixa o texto certo na box  */
+    width: fit-content;
+}
+
+.min-content .item {    /* deixa o texto no min da linha, podendo sair da box  */
+    width: min-content;
+}
+
+.max-content .item {    /* deixa o texto no máximo da linha, podendo sair da box  */
+    width: max-content;
+}
+
+.overflow-hidden {   /*  apenas esconde os q sobra do texto que não cabe*/
+    overflow: hidden;
+}
+
+.overflow-scroll {   /*  possibilita ter um scroll na box  */
+    overflow: scroll;
+}
+
+.overflow-auto {     /*  possibilita ter um scroll automático em ambos os eixos   */
+    overflow: auto;
+}
+
+.overflow-x-hidden {   /*  esconde o que sobre no eixo X   */
+    overflow: hidden;
+}
+
+.overflow-y-hidden {   /*  esconde o que sobre no eixo Y   */
+    overflow: hidden;
+}
+
+.overflow-visible {    /*  permite que o conteúdo exceda o tamanho do elemento, sem ser cortado */
+    overflow: visible;
+}
+
+.overflow-x-scroll {   /*  possibilita o scroll no eixo X   */
+    overflow: scroll;
+}
+
+.overflow-y-scroll {   /*  possibilita o scroll no eixo Y   */
+    overflow: scroll;
+}

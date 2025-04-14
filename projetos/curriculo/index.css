@@ -4,6 +4,8 @@ body {
     padding: 20px;
     max-width: 800px;
     background-color: #f4f4f4;
+    background-image: url(image/bg.avif);
+    background-size: 100%;
     
 }
 
@@ -79,4 +81,10 @@ ul li {
 
 ul li:last-child {
     border-bottom: none;
+}
+
+.imgPerfil{
+    width: 150px;
+    border-radius: 50%;
+    border:3px solid #7a5c29;
 }

@@ -1,0 +1,21 @@
+header{
+    background-color: aqua;
+    height: 200px;
+}
+
+main{
+    background-color: yellow;
+    height: 600px;
+}
+
+footer{
+    background-color: red;
+    height: 100px;
+}
+nav{
+    background-color:orangered;
+}
+
+aside{
+    background-color: green;
+}
