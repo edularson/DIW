@@ -1,0 +1,241 @@
+/* =======================
+   BODY
+========================== */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #fff;
+    overflow: hidden; /* cuidado com esse overflow em telas pequenas */
+    box-sizing: border-box; /* Adiciona box-sizing para incluir bordas no cálculo de altura */
+}
+
+/* Adiciona box-sizing para todos os elementos */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* =======================
+   CONTAINERS FLEXÍVEIS
+========================== */
+.flexbox {
+    display: flex;
+    height: 100%; /* Alterado de 100vh para 100% */
+    overflow: hidden;
+}
+
+.flex-container1 {
+    position: relative;
+    width: 100%;
+    height: 63%;
+    /* border: 3px solid blue; */
+}
+
+.flex-container2 {
+    position: relative;
+    width: 100%;
+    height: 37%;
+    /* border: 3px solid green; */
+}
+
+/* =======================
+   CABEÇALHO DO SITE
+========================== */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    padding: 16px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.header__room {
+    display: flex;
+    font-size: 26px;
+    margin-left: 40px;
+    color: #fff;
+}
+
+.header__nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    gap: 16px;
+}
+
+.header__nav a {
+    color: #fff;
+    padding: 14px;
+    text-decoration: none;
+}
+
+/* =======================
+   SEÇÃO 1 (CONTAINER 1)
+========================== */
+.img1 {
+    width: 60%;
+    aspect-ratio: 16 / 9;
+    background-image: url('images/img1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.box1 {
+    width: 40%;
+    height: 600px;
+    background-color: #fff;
+    position: relative;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1-container {
+    padding: 30px 60px;
+}
+
+.button {
+    background-color: black;
+    width: 175px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* adiciona espaço entre os botões */
+}
+
+.simbolo {
+    color: white;
+    font-size: 44px;
+    font-weight: 100;
+    font-family: -apple-system, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.title__1 {
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.text__1 {
+    color: rgb(167, 167, 167);
+    margin-top: 0px;
+}
+
+.shopNow {
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.shopNow-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.seta {
+    background-image: url('images/seta.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 75px;
+    margin-top: 20px;
+}
+
+/* =======================
+   SEÇÃO 2 (CONTAINER 2)
+========================== */
+.img2 {
+    width: 30%;
+    aspect-ratio: 16 / 9;
+    background-image: url('images/img2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.box2 {
+    width: 40%;
+    aspect-ratio: 16 / 9;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.text2-container {
+    padding: 80px 50px;
+}
+
+.title__2 {
+    font-weight: bold;
+    letter-spacing: 8px;
+    font-size: 16px;
+}
+
+.text__2 {
+    color: rgb(167, 167, 167);
+}
+
+.img3 {
+    width: 35%;
+    aspect-ratio: 16 / 9;
+    background-image: url('images/img3.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* =======================
+   RESPONSIVIDADE (MEDIA QUERY)
+========================== */
+/* Regras para melhorar responsividade do layout  */
+@media (max-width: 768px) {
+    .flexbox {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .img1, .img2, .img3, .box1, .box2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .text1-container, .text2-container {
+        padding: 20px;
+    }
+
+    .shopNow {
+        font-size: 16px;
+        letter-spacing: 6px;
+    }
+}
+
+/* Remova ou comente esta linha para uso em produção */
+/* * {
+    outline: 1px solid red;
+} */
+
+/* Adiciona estilos para garantir que o conteúdo principal ocupe toda a altura disponível */
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

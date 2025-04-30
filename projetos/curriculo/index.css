@@ -1,90 +1,100 @@
+/* ===== CSS do Currículo ===== */
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 40px auto;
-    padding: 20px;
-    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    max-width: 80rem;
     background-color: #f4f4f4;
     background-image: url(image/bg.avif);
     background-size: 100%;
-    
+    font-size: 1.6rem;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 2rem;
     background-color: #cecdcd;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
-.cabecalho {
+/* ===== CLASSES ===== */
+
+.imgPerfil {
+    width: 15rem;
+    border-radius: 50%;
+    border: 0.3rem solid #7a5c29;
+}
+
+.texto-titulo {
     color: #000;
     text-decoration: none;
     text-align: left;
     margin: 0;
+    font-size: 2.8rem;
 }
 
-h1, h2 {
+.texto-subtitulo {
     color: #333;
     text-decoration: underline;
-}
-
-h2 {
-    padding: 15px 10px;
+    padding: 1.5rem 1rem;
     background-color: #f0f0f0;
-    border-left: 4px solid #a38f47;
-    margin: 15px 0;
+    border-left: 0.4rem solid #a38f47;
+    margin: 1.5rem 0;
+    font-size: 2.4rem;
 }
 
-p {
+.texto-padrao {
     background-color: #fff;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
     line-height: 1.6;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.1);
+    font-size: 1.6rem;
 }
 
-a {
+.texto-link {
     color: #a38f47;
     text-decoration: none;
-    padding: 2px 5px;
-    border-radius: 3px;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 1.6rem;
 }
 
-a:hover {
+.texto-link:hover {
     text-decoration: underline;
     background-color: #f8f8f8;
     color: #8a6d3b;
 }
 
-a:visited {
+.texto-link:visited {
     color: #7a5c29;
 }
 
+/* ===== LISTAS ===== */
 ul {
     list-style-type: none;
     background-color: #fff;
-    padding: 15px 15px 15px 35px;
-    border-radius: 5px;
+    padding: 1.5rem 1.5rem 1.5rem 3.5rem;
+    border-radius: 0.5rem;
 }
 
 ul li {
-    margin-bottom: 8px;
+    margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
     list-style-type: square;
-    padding: 5px 0;
-    border-bottom: 1px dashed #e0e0e0;
+    padding: 0.5rem 0;
+    border-bottom: 0.1rem dashed #e0e0e0;
+    font-size: 1.6rem;
 }
 
 ul li:last-child {
     border-bottom: none;
-}
-
-.imgPerfil{
-    width: 150px;
-    border-radius: 50%;
-    border:3px solid #7a5c29;
 }
