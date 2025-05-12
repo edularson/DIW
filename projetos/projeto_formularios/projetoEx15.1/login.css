@@ -1,0 +1,97 @@
+html {
+    background-color: rgb(35, 35, 226);
+    font-family: sans-serif;
+    color: #000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    width: 90%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 2em;
+    box-shadow: -5px -5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: rgb(35, 35, 226);
+    font-weight: 100;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: .75em;
+    color: rgb(35, 35, 226);
+}
+
+input {
+    width: 100%;
+    padding: .75em;
+    margin: .5em 0 1.5em;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    outline: none;
+    color: #000;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.buttons {
+    display: flex;
+    gap: 0.5em;
+}
+
+.btn {
+    background-color: rgb(35, 35, 226);
+    color: #fff;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.botoes p {
+    margin: 0;
+    margin-left: auto;
+}
+
+.botoes a {
+    color: rgb(35, 35, 226);
+    font-size: 0.85em;
+}
+
+.cadastre {
+    background-color: #fff;
+    color: rgb(35, 35, 226);
+    padding: 1em 1em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
