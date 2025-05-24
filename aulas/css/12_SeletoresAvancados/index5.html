@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        p {
+            text-align: center;
+        }
+
+        p::before {
+            content: "<<<";
+        }
+
+        p::after {
+            content: ">>>";
+        }
+
+        div::before {
+            content: "";
+            width: 1em;
+            height: 1em;
+            background-color: red;
+            display: block;
+        }
+
+        div::after {
+            content: url(https://e7.pngegg.com/pngimages/113/102/png-clipart-clube-de-regatas-do-flamengo-esporte-clube-flamengo-encapsulated-postscript-football-football-cdr-text-thumbnail.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>paragrafo com texto simples</p>
+    </div>
+
+</body>
+
+</html>

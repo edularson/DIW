@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores Avançados</title>
+    <style>
+        article h3 ~ p{
+            background-color: red;
+        }
+    </style>
+    <!--
+        Quando usamos (h3 a p) ele entra em todos
+        Quando usamos (h3 > a) (a > p) ele entra no filho
+        Quando usamos (h3 + p) ele pega o 'p' q esta seguindo o h3
+        Quando usamos (p + p) ele pega o 'p' q está seguindo outros 'p'
+        Quando usamos (h3 ~ p) ele pega todos os 'p'
+     -->
+</head>
+
+<body>
+    <article>
+        <h3>Título Nível 3</h3>
+        <p>Parágrafo<a href="#"> com âncora<b> negrito</b></a></p>
+        <p>Parágrafo<a href="#"> com âncora<b> negrito</b></a></p>
+        <p>Parágrafo<a href="#"> com âncora<b> negrito</b></a></p>
+        <h2>Título Nível 2</h2>
+        <p>Parágrafo<a href="#"> com âncora<b> negrito</b></a></p>
+    </article>
+
+</body>
+
+</html>

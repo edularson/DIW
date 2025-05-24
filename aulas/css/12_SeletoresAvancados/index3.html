@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        a[href="#"]{
+            color: red;
+            opacity: .2;
+        }
+        a[href="#"]:not(.link-on){
+            color: black;
+            opacity: .5;
+        }
+        a[href="http"]{
+            color: green;
+        }
+        a[href$=".pdf"]{
+            color: orange;
+        }
+        a [target="_blanck"]{
+            text-decoration: none;
+        }
+        a [alt="externo"]{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#" class="link-on">Link falso</a></li>
+        <li><a href="http://www.unicentro.com" target="_blanck">Link externo</a></li>
+        <li><a href="pasta/arquivo.pdf">Link para arquivo pdf</a></li>
+        <li><a href="index.html">Link interno</a></li>
+    </ul>
+    
+</body>
+</html>
