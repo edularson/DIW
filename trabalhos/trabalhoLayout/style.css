@@ -31,7 +31,7 @@ main {
     width: 100%;
     z-index: 10;   /*  dar prioriedade no eixo z para o header  */
     display: flex;
-    padding: 16px;
+    padding: 1.6rem;
     justify-content: flex-start;
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
@@ -39,21 +39,21 @@ main {
 
 .header__room {
     display: flex;
-    font-size: 26px;
-    margin-left: 40px;
+    font-size: 2.6rem;
+    margin-left: 4rem; 
     color: #fff;
 }
 
 .header__nav ul {
     display: flex;
     list-style-type: none;
-    font-size: 18px;
-    gap: 16px;
+    font-size: 1.8rem;
+    gap: 1.6rem; 
 }
 
 .header__nav a {
     color: #fff;
-    padding: 14px;
+    padding: 1.4rem; 
     text-decoration: none;
 }
 
@@ -86,42 +86,42 @@ main {
 .text1-container {
     width: 40%;
     height: 100%;
-    padding: 70px 70px;
+    padding: 7rem 7rem;
     position: relative;
     box-sizing: border-box; /* inclui o padding e a borda dentro da largura e altura total do elemento */
 }
 
 .title__1 {
     font-size: 4.8rem;
-    margin-bottom: 20px;
+    margin-bottom: 2rem; 
     font-weight: bold;
-    letter-spacing: -2px;
-    padding: 0 20px;
+    letter-spacing: -0.2rem; 
+    padding: 0 2rem; 
 }
 
 .text__1 {
     font-size: 1.6rem;
     margin-top: 0;
     color: rgb(167, 167, 167);
-    padding: 0 20px;
+    padding: 0 2rem; 
 }
 
 .shopNow {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 0 20px;
+    gap: 1rem; 
+    padding: 0 2rem; 
 }
 
 .shopNow img {
-    width: 70px;
+    width: 7rem; 
     height: auto;
 }
 
 .shop {
     font-size: 1.6rem;
     text-transform: uppercase;
-    letter-spacing: 12px;
+    letter-spacing: 1.2rem; 
 }
 
 .black-box {
@@ -161,20 +161,20 @@ main {
 .text2-container {
     width: 40%;
     height: 100%;
-    padding: 50px 40px;
+    padding: 5rem 4rem; 
 }
 
 .title__2 {
     font-size: 2rem;
     font-weight: bold;
-    letter-spacing: 6px;
-    padding: 0 20px;
+    letter-spacing: 0.6rem; 
+    padding: 0 2rem; 
 }
 
 .text__2 {
     font-size: 1.6rem;
     color: rgb(167, 167, 167);
-    padding: 0 20px 0 10px;
+    padding: 0 2rem 0 1rem; 
 }
 
 .img3 {
@@ -188,4 +188,4 @@ main {
 
 /* ===== COMANDO PARA VER AS BORDAS DE TODAS AS COISAS DO CÓDIGO ===== */   
 
-/* * {outline: 1px solid red;} */
+/* * {outline: 0.1rem solid red;} */ /* Convertido de 1px */
