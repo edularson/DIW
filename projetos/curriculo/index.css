@@ -1,21 +1,51 @@
-/* ===== CSS do Currículo ===== */
+/* ===== VARIÁVEIS GLOBAIS ===== */
+:root {
+    --cor-primaria: #a38f47;
+    --cor-secundaria: #7a5c29;
+    --cor-fundo: #f4f4f4;
+    --cor-cabecalho: #cecdcd;
+    --cor-texto: #000;
+    --cor-subtitulo: #333;
+    --cor-hover: #8a6d3b;
+    --tamanho-texto-padrao: 1.6rem;
+    --tamanho-titulo: 2.8rem;
+    --tamanho-subtitulo: 2.4rem;
+    --largura-maxima: 110rem;
+    --espacamento-padrao: 2rem;
+}
+
+/* ===== ESTILOS BASE ===== */
 html {
     font-size: 62.5%;
 }
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 4rem auto;
+    margin: 0;
     padding: var(--espacamento-padrao);
-    max-width: var(--largura-maxima);
     background-color: var(--cor-fundo);
-    background-image: url(image/bg.avif);
-    background-size: 100%;
+    background: linear-gradient(to bottom, #F5F5DC, #D2B48C);
+    background-size: cover;
+    background-attachment: fixed;
     font-size: var(--tamanho-texto-padrao);
     min-height: 100vh;
 }
 
+/* ===== GRID LAYOUT CONTAINER ===== */
+.grid-container {
+    display: grid;
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+    gap: var(--espacamento-padrao);
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "header header"
+        "main   aside";
+}
+
+/* ===== POSICIONAMENTO DOS ITENS NO GRID ===== */
 header {
+    grid-area: header;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,10 +54,20 @@ header {
     border-radius: 1rem;
 }
 
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
 /* ===== CLASSES ===== */
 
 .imgPerfil {
     width: 15rem;
+    height: 15rem;
+    object-fit: cover;
     border-radius: 50%;
     border: 0.3rem solid var(--cor-secundaria);
 }
@@ -43,11 +83,15 @@ header {
 .texto-subtitulo {
     color: var(--cor-subtitulo);
     text-decoration: underline;
-    padding: calc(var(--espacamento-padrao) * 0.75) 1rem;
+    padding: calc(var(--espacamento-padrao) * 0.5) 1rem;
     background-color: #f0f0f0;
     border-left: 0.4rem solid var(--cor-primaria);
-    margin: 1.5rem 0;
+    margin: 0 0 1.5rem 0;
     font-size: var(--tamanho-subtitulo);
+}
+
+section {
+    margin-bottom: var(--espacamento-padrao);
 }
 
 .texto-padrao {
@@ -55,8 +99,7 @@ header {
     padding: calc(var(--espacamento-padrao) * 0.75);
     border-radius: 0.5rem;
     line-height: 1.6;
-    margin-bottom: 2rem;
-    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.1);
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
     font-size: var(--tamanho-texto-padrao);
 }
 
@@ -66,6 +109,7 @@ header {
     padding: 0.2rem 0.5rem;
     border-radius: 0.3rem;
     font-size: var(--tamanho-texto-padrao);
+    font-weight: bold;
 }
 
 .texto-link:hover {
@@ -74,23 +118,19 @@ header {
     color: var(--cor-hover);
 }
 
-.texto-link:visited {
-    color: var(--cor-secundaria);
-}
-
 /* ===== LISTAS ===== */
 ul {
     list-style-type: none;
     background-color: #fff;
-    padding: calc(var(--espacamento-padrao) * 0.75) calc(var(--espacamento-padrao) * 0.75) calc(var(--espacamento-padrao) * 0.75) 3.5rem;
+    padding: var(--espacamento-padrao);
     border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
 ul li {
     margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
-    list-style-type: square;
     padding: 0.5rem 0;
     border-bottom: 0.1rem dashed #e0e0e0;
     font-size: var(--tamanho-texto-padrao);
@@ -100,18 +140,37 @@ ul li:last-child {
     border-bottom: none;
 }
 
-/* ===== VARIÁVEIS GLOBAIS ===== */
-:root {
-    --cor-primaria: #a38f47;
-    --cor-secundaria: #7a5c29;
-    --cor-fundo: #f4f4f4;
-    --cor-cabecalho: #cecdcd;
-    --cor-texto: #000;
-    --cor-subtitulo: #333;
-    --cor-hover: #8a6d3b;
-    --tamanho-texto-padrao: 1.6rem;
-    --tamanho-titulo: 2.8rem;
-    --tamanho-subtitulo: 2.4rem;
-    --largura-maxima: 80rem;
-    --espacamento-padrao: 2rem;
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "aside";
+        gap: 1.5rem;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imgPerfil {
+        margin-top: 1.5rem;
+    }
+
+    .texto-titulo {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .texto-subtitulo {
+        font-size: 2rem;
+    }
 }
