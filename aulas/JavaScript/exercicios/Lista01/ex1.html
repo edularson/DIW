@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <h1>Exercício 1</h1>
+    <script>
+        function operacoesComDoisNumeros() {
+            const num1 = parseFloat(prompt("Digite o primeiro numero:"));
+            const num2 = parseFloat(prompt("Digite o segundo numero:"));
+
+            if (isNaN(num1) || isNaN(num2)) {
+                console.log("Digite numeros validos.");
+                return;
+            }
+
+            console.log("Soma: " + (num1 + num2));
+            console.log("Subtração: " + (num1 - num2));
+            console.log("Multiplicação: " + (num1 * num2));
+            console.log("Divisão: " + (num1 / num2));
+            console.log("Resto da Divisão: " + (num1 % num2));
+        }
+        operacoesComDoisNumeros();
+    </script>
+</body>
+</html>

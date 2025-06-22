@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+</head>
+<body>
+    <h1>Exercício 6</h1>
+    <script>
+        function numeroParOuImpar() {
+            const numero = parseInt(prompt("Digite um numero inteiro:"));
+
+            if (isNaN(numero)) {
+                console.log("Digite um numero inteiro valido.");
+                return;
+            }
+
+            if (numero % 2 === 0) {
+                console.log("O numero " + numero + " é PAR.");
+            } else {
+                console.log("O numero " + numero + " é ÍMPAR.");
+            }
+        }
+        numeroParOuImpar();
+    </script>
+</body>
+</html>

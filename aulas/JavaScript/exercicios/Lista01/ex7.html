@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+</head>
+<body>
+    <h1>Exercício 7</h1>
+    <script>
+        function contadorRegressivo() {
+            const numero = parseInt(prompt("Digite um numero para a contagem regressiva:"));
+
+            if (isNaN(numero)) {
+                console.log("Digite um número valido.");
+                return;
+            }
+
+            for (let i = numero; i >= 0; i--) {
+                console.log(i);
+            }
+        }
+        contadorRegressivo();
+    </script>
+</body>
+</html>
